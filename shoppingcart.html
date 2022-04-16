@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping Cart</title>
+
+    <meta name="description" content="Shopping Cart page for Online Grocery Store - SOEN 287 Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f47bfd9ab4.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="cart.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="heading">
+        <a href="index.html">
+      <h2 class="title">Mountain Market</h2>
+        </a>
+      </div>
+      <div class="secondary">
+      <h1 class="sub-title">Online Shopping Cart</h1>
+      </div>
+      <hr>
+      <p class="path">Home / Online / Shopping Cart</p>
+    </header>
+
+    <br>
+
+    <div class="container c">
+      <div class="cart-container bg-light card">
+
+        <div class="cart-header card-title">
+          <div class="title">
+            <h1>Shopping Cart</h1>
+          </div>
+
+
+          <div class="rmvall-top rmvall">
+            <button onclick="emptyCart()" id="rmvall" class="rmvall-btn btn-link" type="button" name="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+              Remove all
+            </button>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <div class="item-container-container card-body">
+          <div id="id-4225" class="item-container">
+            <div class="col1">
+              <div class="item-img">
+                <img width=120px src="images/avogado.png" alt="Avocado" />
+              </div>
+            </div>
+            <div class="col-container">
+              <div class="col2">
+                <div class="item-name">
+                    <h2>Avocado</h2>
+                </div>
+                <div class="item-price">
+                  <h3 id="price-4225">$9.99</h3>
+                </div>
+                <div class="item-aisle">
+                  <h4>Fruits & Vegetables</h4>
+                </div>
+              </div>
+                <div class="col3">
+                  <div class="quantity-container d-flex flex-row">
+                    <div class="sub col-md-3 col-lg-3 col-xl-2 d-flex">
+                      <button onclick="subQuantity('4225')" class="btn-link" type="button" name="button" aria-label="Minus button">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </div>
+                    <div class="quantity">
+                      <label for="quantity-4225">Item Quantiity</label>
+                      <input id="quantity-4225" min="0" value="1" name="quantity" type="number" class="form-control form-control-sm" />
+                    </div>
+                    <div class="add col-md-3 col-lg-3 col-xl-2 d-flex">
+                      <button onclick="addQuantity('4225')" class="btn-link" type="button" name="button" aria-label="Add button">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col4">
+              <div class="rmv-btn-container">
+                <button onclick="removeItem('4225')" id="delete" class="btn-link" type="button" name="remove" aria-label="Remove item">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div id="id-4011" class="item-container">
+            <div class="col1">
+              <div class="item-img">
+                <img width=120px src="images/banana.png" alt="Banana" />
+              </div>
+            </div>
+            <div class="col-container">
+              <div class="col2">
+                <div class="item-name">
+                    <h2>Banana</h2>
+                </div>
+                <div class="item-price">
+                  <h3 id="price-4011">$3.99</h3>
+                </div>
+                <div class="item-aisle">
+                  <h4>Fruits & Vegetables</h4>
+                </div>
+              </div>
+              <div class="col3">
+                <div class="quantity-container">
+                  <div class="sub col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button onclick="subQuantity('4011')" class="btn-link" type="button" name="button"aria-label="Minus button">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <div class="quantity">
+                    <label for="quantity-4011">Item Quantiity</label>
+                    <input id="quantity-4011" min="0" value="1" name="quantity" type="number" class="form-control form-control-sm" />
+                  </div>
+                  <div class="add col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button onclick="addQuantity('4011')" class="btn-link" type="button" name="button" aria-label="Add button">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col4">
+              <div class="rmv-btn-container">
+                <button onclick="removeItem('4011')"class="btn-link" type="button" name="remove" aria-label="Remove item">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div id="id-4033" class="item-container">
+            <div class="col1">
+              <div class="item-img">
+                <img width=120px src="images/lemon.png" alt="Lemon" />
+              </div>
+            </div>
+            <div class="col-container">
+              <div class="col2">
+                <div class="item-name">
+                    <h2>Lemon</h2>
+                </div>
+                <div class="item-price">
+                  <h3 id="price-4033">$1.99</h3>
+                </div>
+                <div class="item-aisle">
+                  <h4>Fruits & Vegetables</h4>
+                </div>
+              </div>
+                <div class="col3">
+                  <div class="quantity-container">
+                    <div class="sub col-md-3 col-lg-3 col-xl-2 d-flex">
+                      <button onclick="subQuantity('4033')" class="btn-link" type="button" name="button"aria-label="Minus button">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </div>
+                    <div class="quantity">
+                      <label for="quantity-4033">Quantiity</label>
+                      <input id="quantity-4033" min="0" value="1" name="quantity" type="number"class="form-control form-control-sm" />
+                    </div>
+                    <div class="add col-md-3 col-lg-3 col-xl-2 d-flex">
+                      <button onclick="addQuantity('4033')" class="btn-link" type="button" name="button" aria-label="Add button">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col4">
+              <div class="rmv-btn-container">
+                <button onclick="removeItem('4033')" class="btn-link" type="button" name="remove"aria-label="Remove item">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div id="id-4664" class="item-container">
+            <div class="col1">
+              <div class="item-img">
+                <img width=120px src="images/tomato.png" alt="Tomato" />
+              </div>
+            </div>
+            <div class="col-container">
+              <div class="col2">
+                <div class="item-name">
+                  <h2>Tomato</h2>
+                </div>
+                <div class="item-price">
+                  <h3 id="price-4664">$6.99</h3>
+                </div>
+                <div class="item-aisle">
+                  <h4>Fruits & Vegetables</h4>
+                </div>
+              </div>
+                <div class="col3">
+                  <div class="quantity-container">
+                    <div class="sub col-md-3 col-lg-3 col-xl-2 d-flex">
+                      <button onclick="subQuantity('4664')" class="btn-link" type="button" name="button" aria-label="Minus button">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </div>
+                    <div class="quantity">
+                      <label for="quantity-4664">Item Quantiity</label>
+                      <input id="quantity-4664" min="0" value="1" name="quantity" type="number"class="form-control form-control-sm" />
+                    </div>
+                    <div class="add col-md-3 col-lg-3 col-xl-2 d-flex">
+                      <button onclick="addQuantity('4664')" class="btn-link" type="button" name="button" aria-label="Add button">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col4">
+              <div class="rmv-btn-container">
+                <button onclick="removeItem('4664')" class="btn-link" type="button" name="remove" aria-label="Remove item">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>
+
+        <div class="rmvall-btm rmvall">
+          <button onclick="emptyCart()" class="rmvall-btn btn-link" type="button" name="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+            Remove all
+          </button>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="cart-info-container card bg-light">
+        <div class="cart-info-header card-title">
+          <h1>Summary</h1>
+        </div>
+
+        <hr>
+
+        <div class="amnt-container-container card-body">
+          <div class="cart-items">
+            <h3><span id="noitems">4</span> ITEM(S) IN CART</h3>
+          </div>
+
+          <hr>
+
+          <div class="amnt-container">
+            <div class="subtotal">
+              <div>
+                Subtotal:
+              </div>
+              <div>
+                <h6 id="stotal">$22.96</h6>
+              </div>
+            </div>
+              <div class="taxes">
+                <div class="qst">
+                  <div>
+                    QST:
+                  </div>
+                  <div>
+                    <h6 id="qst-amnt">$2.29</h6>
+                  </div>
+                </div>
+
+                <div class="gst">
+                  <div>
+                    GST:
+                  </div>
+                  <div>
+                    <h6 id="gst-amnt">$1.15</h6>
+                  </div>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="total">
+                <div class="total-text">
+                  Order total:
+                </div>
+                <div>
+                  <h6 id="total-price">$26.40</h6>
+                </div>
+              </div>
+            </div>
+        </div>
+
+          <div class="btn-container">
+              <button class="btn" type="button">Checkout</button>
+              <button class="cnshp-btn btn" type="button">Continue Shopping</button>
+          </div>
+      </div>
+    </div>
+
+    <footer>
+
+    </footer>
+  </body>
+</html>

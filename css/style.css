@@ -1,0 +1,262 @@
+
+body {
+  background-color: #eaf2fc;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black !important;
+}
+
+.header {
+  font-size: 63px;
+}
+
+.btn-container .btn {
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  /* font-size: 24px; */
+  padding: 12px 28px;
+  line-height: 1.3333333;
+  /* border-radius: 4.5px; */
+}
+
+.btn-container {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.links {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+input[type=number]{
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.text-box-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tb-container-container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+input[type=text], input[type=tel], input[type=password] {
+  border-radius: 4.5px;
+  width: 100%;
+  height: 40px;
+  display: block;
+  margin-bottom: 10px;
+  text-indent: 5px;
+}
+
+/* if screen smaller than 600px */
+@media only screen and (min-width: 600px) {
+
+  .tb-container-container {
+    flex-direction: row;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  .text-box-container {
+    width: 49%;
+  }
+}
+
+.container::before {
+  content: none !important;
+}
+
+.form-container {
+  margin: 40px;
+  border-radius: 26px;
+}
+
+.header {
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+  text-align: center;
+}
+
+.container {
+    width: 100%;
+}
+
+.cart-header {
+  display: inline-flex;
+  align-items: flex-end;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-left: 7px;
+}
+
+.cart-container {
+  margin-bottom: 10px;
+  width: 60%;
+  /*box-shadow: 5px 5px #808080;*/
+}
+
+.quantity-container, .title {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.rmvall-btn {
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+}
+
+.title {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-info-container .btn-container .btn {
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.amnt-container {
+  text-align: right;
+}
+
+.taxes{
+  display: block;
+}
+
+.add, .sub {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.quantity-container button, .rmv-btn-container button {
+  color: #333;
+}
+
+.quantity label {
+  display: none;
+}
+
+.quantity {
+  width: 50px;
+}
+
+.empty-cart-message {
+  text-align: center;
+}
+
+.item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* width: 75%; */
+}
+
+.amnt-container-container {
+    display: inline-block;
+    /* flex-direction: row; */
+    /* justify-content: flex-end; */
+    /* margin-right: 10px; */
+    /* width: 63%; */
+}
+
+.btn-link:hover {
+  color: black !important;
+}
+
+.cart-info-header {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 15px;
+    padding-left: 7px;
+}
+
+.cart-info-container {
+    height: 37%;
+}
+
+.subtotal, .total, .qst, .gst {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width:601px)  {
+  .col-container {
+    display: inline-flex;
+    width: 450px;
+    height: 180px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .rmvall-btm {
+    display: none;
+  }
+}
+
+.card {
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width:1280px)  {
+  .c .container {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .cart-info-container {
+    width: 37%;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .rmvall-top {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:1279px) {
+  .cart-info-container, .cart-container {
+    width: 100%;
+  }
+}

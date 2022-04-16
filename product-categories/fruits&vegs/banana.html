@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aisle/Fruits/Banana</title>
+		  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script src="../../scripts.js">
+
+    </script>
+  </head>
+  <body>
+   <!--======================== NAVIGATION ======================= -->
+  <div class="nav">
+
+    <div class="upperTOPMessage">
+      <p>Get 50$ OFF your first order</p>
+    </div>
+
+    <div class="TOPmenu">
+      <a href="../../index.html">
+        <div class="logo">Mountain Market</div>
+      </a>
+
+
+      <div class="DOWNmenu">
+
+          <div class="menu-item"><a href="product-categories/aisles.html">ALL PRODUCTS</a></div>
+
+
+        <div class="dropdown">
+          <div class="menu-item"> <a href="">AISLES</a> </div>
+          <div class="dropdown-content">
+            <a href="product-categories/fruits&vegs/Fruits.html">Fruits and Vegetables </a>
+            <a href="product-categories/meat/Meats.html">meat & fish  </a>
+          </div>
+        </div>
+
+<!--===================LOGIN AND SIGNUP --=====>
+<!= icon not showing -->
+    <div style="display: inline-flex">
+      <a href="login.html"><button class="buttonlogin">Login <i class="zmdi zmdi-account-o"></i></i></button></a> </div>
+        <a href="login.html"><button class="buttonsingup">Signup <i class="fa fa-sign-in"></i></button></a> </div>
+    <div>
+
+      <div class="right-menu">
+        <div class="cart-btn">
+          <a href="shoppingcart.html">
+          <i class='bx bx-cart-alt'></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+<div class="heading">
+<h2 class="title">Mountain Market</h2>
+</div>
+<div class="secondary">
+<h1 class="sub-title">ONLINE SHOPPING CART</h1>
+</div>
+<hr>
+<p class="path">Home / Online / Grocery / Aisle / Fruits / Banana</p>
+<div class="category-div">
+<h1 class="category">Banana</h1>
+</div>
+<div class="path-menu">
+<ul>
+  <li><a class="link" href="../aisles.html">Aisles</li></a>
+  <ul>
+    <li>\ <a class="side" href="Fruits.html">Fruits</a>
+    <ul class="current-page">banana</ul></li>
+    <li><a class="side" href="../meat/Meats.html">Meats</a></li>
+  </ul>
+</ul>
+</div>
+<div class="product">
+<img class="product-img" src="../../images/banana.png" alt="banana-img">
+<h2 class="name">Banana</h2>
+<h2 class="price">$1.96 /kg$0.89 /lb.</h2>
+<details class="description">
+  <summary>Read more</summary>
+  Soft and unmistakable, the banana is a popular fruit for its good taste and versatility. Good at any time of the day, it is especially loved in smoothies, in yogurt or flambéed in rum! Thanks to its high magnesium and potassium content, the banana is the ideal fruit to recover after a workout.
+</details>
+<br>
+
+<button class="plusminus" onclick="decrementbanana()">-</button>
+<input type="text" id="quantitybanana"/> 
+<button class="plusminus" onclick="incrementbanana()">+$</button>
+<span class="quantity" id="costbanana">0</span>
+<br>
+<br>
+<button class="btn-product">add to cart</button>
+</div>
+<!-- FOOTER SECTION -->
+  <footer class= "footerproduct">
+  <div class="row primary">
+
+
+  <div class="column links">
+  <h3>Get in touch </h3>
+
+   <ul>
+
+    <li>
+     <a href="">About us</a>
+    </li>
+    <li>
+     <a href="">Facebook</a>
+    </li>
+    <li>
+     <a href=""></a>
+    </li>
+    <li>
+     <a href=""></a>
+    </li>
+   </ul>
+
+  </div>
+
+
+  <div class="column links">
+    <h3>Quick Links</h3>
+     <ul>
+      <li>
+       <a href="">Terms Of Service</a>
+      </li>
+      <li>
+       <a href="">Help & Support</a>
+      </li>
+      <li>
+      <a href="">Purchase Terms & Conditions</a>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="footerbox">
+    <div class="input-group">
+      <input type="text" placeholder="Enter your email">
+      <button>
+        Subscribe
+      </button>
+    </div>
+
+  </footer>
+  <!-- END FOOTER SECTION -->
+
+  <!--<script type="text/javascript">
+        document.getElementById("txt2").value = getSavedValue("txt2");
+
+        function saveValue(e)
+        {
+            var id = e.id;
+            var val = e.value;
+            localStorage.setItem(id, val);
+        }
+
+        function getSavedValue  (v){
+            if (!localStorage.getItem(v)) {
+                return "";
+            }
+            return localStorage.getItem(v);
+        }
+</script>-->
+
+  </body>
+</html>

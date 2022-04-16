@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="backstorestyle.css">
+    <title>BACKSTORE MAIN PAGE</title>
+  </head>
+  <body>
+    <center>
+           <header>
+        <h1>MOUNTAIN MARKET</h1>
+        <h1>LIST OF PRODUCTS</h1>
+        <div class="nav">
+          <a href="./ProductList.html">List of Products</a>
+          <a href="./UserList.html">List of Customers</a>
+          <a href="./OrderList.html">List of Orders</a>
+        </div>
+      </header>
+      <br />
+      <br />
+      <br />
+
+
+
+      <div id="wrapper">
+        <table
+          class="data_table"
+          align="center"
+          cellspacing="30"
+          cellpadding="35"
+
+        >
+          <tr>
+            <th>Name</th>
+            <th>Aisle</th>
+            <th>Stock</th>
+            <th>Edit, Add, Delete</th>
+          </tr>
+
+          <tr class="row">
+            <td class="name_row">Bananas</td>
+            <td class="aisle_row">Fruits and Vegetables</td>
+            <td class="Stock_row">13</td>
+            <td>
+              <input
+                  type="button"
+                  class="button"
+                  value="Edit"
+
+              />
+
+              <input type="button" value="Delete" class="button">
+            </td>
+          </tr>
+
+          <tr class="row">
+            <td class="name_row">Chicken Thighs</td>
+            <td class="aisle_row">Meats</td>
+            <td class="Stock_row">24</td>
+            <td>
+              <input
+                  type="button"
+                  class="button"
+                  value="Edit"
+
+              />
+
+              <input type="button" value="Delete" class="button">
+            </td>
+          </tr>
+
+          <tr class="row">
+            <td class="name_row">Beef</td>
+            <td class="aisle_row">Meats</td>
+            <td class="Stock_row">32</td>
+            <td>
+              <input
+                  type="button"
+                  class="button"
+                  value="Edit"
+              />
+
+              <input type="button" value="Delete" class="button">
+            </td>
+          </tr>
+
+          <tr>
+            <td><input type="text" class="textfield" /></td>
+            <td><input type="text" class="textfield" /></td>
+            <td><input type="text" class="textfield" /></td>
+            <td>
+              <a href="./ProductListEdit.html"
+                ><input
+                  type="button"
+                  class="button"
+                  value="Add New Customer"
+              /></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+
+    <script type="text/javascript" src="./home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="backstorestyle.css">
+    <title>BACKSTORE User List</title>
+  </head>
+
+<center>
+  <body>
+
+      <header>
+        <h1>MOUNTAIN MARKET</h1>
+        <h1>LIST OF CUSTOMERS</h1>
+        <div class="nav">
+          <a href="./ProductList.html">List of Products</a>
+          <a href="./UserList.html">List of Customers</a>
+          <a href="./OrderList.html">List of Orders</a>
+        </div>
+      </header>
+      <br />
+      <br />
+      <br />
+
+
+
+
+      <div id="wrapper">
+        <table
+        class="data_table"
+        align="center"
+        cellspacing="30"
+        cellpadding="35"
+
+
+        >
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Number of Orders</th>
+            <th>Edit, Add, Delete</th>
+          </tr>
+
+          <tr class="row">
+            <td class="name_row">CHEN Junior</td>
+            <td class="email_row">Chenjr@gmail.com</td>
+            <td class="orders_row">25</td>
+            <td>
+              <input
+                  type="button"
+                  class="button"
+                  value="Edit"
+              />
+
+              <input type="button" value="Delete" class="button">
+            </td>
+          </tr>
+
+          <tr class="row">
+            <td class="name_row">Shawn Levy</td>
+            <td class="email_row">shawnlevy@gmail.com</td>
+            <td class="orders_row">23</td>
+            <td>
+              <input
+                  type="button"
+                  class="button"
+                  value="Edit"
+              />
+
+              <input type="button" value="Delete" class="button">
+            </td>
+          </tr>
+
+          <tr class="row">
+            <td class="name_row">Steven Zrihen</td>
+            <td class="email_row">steven.zrihen.student@gmail.com</td>
+            <td class="orders_row">22</td>
+            <td>
+              <input
+                  type="button"
+                  class="button"
+                  value="Edit"
+              />
+
+              <input type="button" value="Delete" class="button">
+            </td>
+          </tr>
+
+          <tr>
+            <td><input type="text" class="textfield" /></td>
+            <td><input type="text" class="textfield" /></td>
+            <td><input type="text" class="textfield" /></td>
+            <td>
+              <a href="./UserListEdit.html"
+                ><input
+                  type="button"
+                  class="button"
+                  value="Add New Customer"
+              /></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+  </body>
+  </center>
+</html>
